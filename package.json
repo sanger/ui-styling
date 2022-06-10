@@ -1,0 +1,23 @@
+{
+  "name": "@sanger/ui-styling",
+  "version": "1.0.0",
+  "description": "Module to share styles based on Sanger brand guidlines using tailwind classes",
+  "main": "tailwind.config.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sanger/ui-styling.git"
+  },
+  "keywords": [
+    "ui-styling",
+    "sanger"
+  ],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sanger/ui-styling/issues"
+  },
+  "homepage": "https://github.com/sanger/ui-styling#readme"
+}
