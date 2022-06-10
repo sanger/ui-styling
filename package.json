@@ -1,6 +1,6 @@
 {
   "name": "@sanger/ui-styling",
-  "version": "1.0",
+  "version": "1.0.0",
   "description": "Module to share styles based on Sanger brand guidlines using tailwind classes",
   "main": "tailwind.config.js",
   "scripts": {
