@@ -12,8 +12,8 @@ jobs:
           - name: checkout
             uses: actions/checkout@v2
           - name: Export node version
-              id: node_version
-              run: echo ::set-output name=NODE_VERSION::$(cat .nvmrc)
+            id: node_version
+            run: echo ::set-output name=NODE_VERSION::$(cat .nvmrc)
           - name: node
             uses: actions/setup-node@v3
             with:
