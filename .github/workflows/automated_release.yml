@@ -40,7 +40,7 @@ jobs:
           tag: v${{ env.RELEASE_VERSION }}
           prerelease: ${{ !(github.ref == 'refs/heads/main') }}
           commit: ${{ github.sha }}
-          artifacts: sanger-ui-styling-${{ env.RELEASE_VERSION }}.tgz
+          artifacts:  sanger-ui-styling-1.0.0.tgz
           artifactErrorsFailBuild: true
 
    
