@@ -46,7 +46,7 @@ jobs:
         with:
           name: ${{ env.RELEASE_VERSION }}
           tag: v${{ env.RELEASE_VERSION }}
-          artifacts: "sanger-ui-styling-1.0.1.tgz"
+          artifacts: "sanger-ui-styling-"${{ steps.package-version.outputs.current-version}}".tgz"
           artifactErrorsFailBuild: true
 
    
