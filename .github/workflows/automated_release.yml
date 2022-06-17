@@ -37,7 +37,7 @@ jobs:
         uses: dutscher/read-package-json-endpoint-actions@v1.33.7
         id: package-json-endpoint
       - name: Echo package.json
-        run: echo "${{steps.package-json-endpoint.version}}"
+        run: echo "${{steps.package-json-endpoint.outputs.endpoint}}"
 
       - name: Create release 
         uses: ncipollo/release-action@v1.8.8
