@@ -38,9 +38,6 @@ jobs:
         uses: martinbeentjes/npm-get-version-action@main
         with:
           path: ./
-      - name: Echo package.json
-        run: echo "${{ steps.package-version.outputs.current-version}}"
-
       - name: Create release 
         uses: ncipollo/release-action@v1.8.8
         with:
