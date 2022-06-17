@@ -34,12 +34,10 @@ jobs:
         env:
              NODE_AUTH_TOKEN: ${{secrets.NPM_AUTH_TOKEN}}
       - name: Read package.json
-        id: package
-        uses: juliangruber/read-file-action@v1
-        with:
-          path: ./package.json
+        uses: dutscher/read-package-json-endpoint-actions@v1.33.7
+        id: package-json-endpoint
       - name: Echo package.json
-        run: echo "${{steps.package.version}}"
+        run: echo "${{steps.package-json-endpoint.version}}"
 
       - name: Create release 
         uses: ncipollo/release-action@v1.8.8
