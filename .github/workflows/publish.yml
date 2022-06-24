@@ -1,3 +1,4 @@
+# Automatically publish the package in npm
 name: "publish"
 on: 
    push:
