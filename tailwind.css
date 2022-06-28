@@ -32,5 +32,4 @@ svg.logo.loading rect:nth-child(3n+1) {
 }
 
 @tailwind components;
-
 @tailwind utilities;
