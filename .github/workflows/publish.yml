@@ -10,18 +10,18 @@ jobs:
        name: publish
        runs-on: ubuntu-latest
        steps: 
-          - name: checkout
+          - name: Checkout
             uses: actions/checkout@v2
           - name: Export node version
             id: node_version
             run: echo ::set-output name=NODE_VERSION::$(cat .nvmrc)
-          - name: node
+          - name: Setup node
             uses: actions/setup-node@v3
             with:
               node-version: ${{ steps.node_version.outputs.NODE_VERSION }}
               registry-url: https://registry.npmjs.org/
-         
+
           - name: publish
-            run: npm publish --access public 
+            run: npm publish --access public
             env:
                 NODE_AUTH_TOKEN: ${{secrets.NPM_AUTH_TOKEN}}
