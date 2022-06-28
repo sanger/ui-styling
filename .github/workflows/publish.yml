@@ -6,7 +6,7 @@ on:
          - main
 
 jobs:
-   release:
+   publish:
        name: publish
        runs-on: ubuntu-latest
        steps: 
@@ -20,6 +20,7 @@ jobs:
             with:
               node-version: ${{ steps.node_version.outputs.NODE_VERSION }}
               registry-url: https://registry.npmjs.org/
+          - run: npm ci
           - name: publish
             run: npm publish --access public 
             env:
