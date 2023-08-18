@@ -247,6 +247,21 @@ module.exports = {
         800: "#97266d",
         900: "#702459",
       },
+      success: {
+        DEFAULT: "#68d391",
+        light: "#f0fff4",
+        dark: "#276749",
+      },
+      failure: {
+        DEFAULT: "#fc8181",
+        light: "#fff5f5",
+        dark: "#9b2c2c",
+      },
+      warning: {
+        DEFAULT: "#f6e05e",
+        light: "#fffff0",
+        dark: "#975a16",
+      },
     },
     spacing: {
       px: "1px",
